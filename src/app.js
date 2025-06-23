@@ -14,7 +14,9 @@
      console.log(`Cpu choose ${cpuchoose}`);
 
      
-    if (userGuess === "piedra" && (cpuchoose === "tijera" || cpuchoose === "lagarto")){
+    if (userGuess === cpuchoose){
+         console.log("Empate");
+    }else if (userGuess === "piedra" && (cpuchoose === "tijera" || cpuchoose === "lagarto")){
         console.log("Ganas");
     }else if (userGuess === "papel" && (cpuchoose === "piedra" || cpuchoose === "spock")){
         console.log("Ganas");
@@ -24,8 +26,6 @@
         console.log("Ganas");
     }else if (userGuess === "spock" && (cpuchoose === "tijera" || cpuchoose === "piedra")){
         console.log("Ganas");
-    }else if (userGuess === cpuchoose){
-        console.log("Empate");
     }else {
         console.log("Pierdes");
  }
